@@ -52,24 +52,24 @@ export default function UpdateModal({ open, setOpen, user, setUser }) {
             transition
             className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-closed:translate-y-4 data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in sm:my-8 sm:w-full sm:max-w-lg data-closed:sm:translate-y-0 data-closed:sm:scale-95"
           >
-            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-              <div className="sm:flex sm:items-start">
-                <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+            <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4  min-[300px]:min-w-60">
+              <div className="flex items-start">
+                <div className="mt-3  sm:mt-0 sm:ml-4 text-left w-full">
                   <DialogTitle
                     as="h3"
                     className="text-base font-semibold text-gray-900"
                   >
                     Update User
                   </DialogTitle>
-                  <div className="mt-2">
-                    <form className="text-sm text-gray-500">
+                  <div className="mt-2 w-full">
+                    <form className="text-sm text-gray-500 w-full">
                       <label htmlFor="name" className="block mt-3">
                         Name
                       </label>
                       <input
                         type="text"
                         id="name"
-                        className="border border-gray-500 rounded-sm w-100 p-1 mt-2 text-black"
+                        className="border border-gray-500 rounded-sm w-full p-1 mt-2 text-black"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                       />
@@ -79,7 +79,7 @@ export default function UpdateModal({ open, setOpen, user, setUser }) {
                       <input
                         type="text"
                         id="username"
-                        className="border border-gray-500 rounded-sm w-100 p-1 mt-2"
+                        className="border border-gray-500 rounded-sm w-full p-1 mt-2"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                       />
@@ -89,7 +89,7 @@ export default function UpdateModal({ open, setOpen, user, setUser }) {
                       <input
                         type="mail"
                         id="email"
-                        className="border border-gray-500 rounded-sm w-100 p-1 mt-2"
+                        className="border border-gray-500 rounded-sm w-full p-1 mt-2"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                       />

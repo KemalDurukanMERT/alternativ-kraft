@@ -47,7 +47,7 @@ export default function Home() {
       <h1 className=" text-center text-4xl mt-4 font-bold">User Management</h1>
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4 px-30">
+      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-4 md:px-30">
         {users.map((user) => (
           <li
             key={user.id}

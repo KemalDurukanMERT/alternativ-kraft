@@ -26,7 +26,7 @@ const DetailDyn = ({ params }) => {
     <div className="flex flex-col justify-center items-center">
       <h1 className="text-3xl mt-4 font-bold">Person Detail</h1>
       {user ? (
-        <div className="m-4 w-[600px] shadow-2xl border-4 border-amber-800 bg-amber-100 p-3 rounded-2xl flex flex-col gap-3 justify-between">
+        <div className="m-4  shadow-2xl border-4 border-amber-800 bg-amber-100 p-3 rounded-2xl flex flex-col gap-3 justify-between">
           <p className="text-center text-xl italic font-semibold break-words">
             {user.name}
           </p>
